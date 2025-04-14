@@ -241,6 +241,7 @@ main {
 }
 
 .main-fragancias h2 {
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -299,7 +300,8 @@ span {
     background-color: #d9d4e7;
 }
 
-.main-maquillajes h2, h3{
+.main-maquillajes h2{
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -310,6 +312,7 @@ span {
     color:#fffffe;
     padding-top: 6px;
     text-align: center;
+    margin-top: 10px;
 }
 
 
