@@ -1,0 +1,68 @@
+/*////PAGE MAQUILLAJE CON GRID////*/
+
+.main-maquillajes {
+    margin-bottom: 10px;
+    background-color: #d9d4e7;
+    h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    h3{
+        background-color: #0e172c;
+        width: 100%;
+        height: 50px;
+        color:#fffffe;
+        padding-top: 6px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .grilla-maquillajes{
+        display: grid;
+        grid-area: grilla-maquillajes;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 40px;
+        .maquillajes {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-between;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;      
+            .img-maq {
+                width: 60%;
+                max-width: 300px;
+                max-height: 300PX;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px4;
+                margin-bottom: 15px;
+            }
+            .marca-m{
+                color:rgba(223, 129, 215, 0.22);
+            }          
+            .descripcion{ 
+                padding: 10px;
+            }       
+            .precio-maq{
+                font-size: 30px;
+                font-weight: 600;
+                font-style: italic;
+            }
+        }     
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

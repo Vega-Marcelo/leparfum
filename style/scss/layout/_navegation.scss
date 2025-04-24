@@ -1,0 +1,41 @@
+/*////MENU DE NAVEGACION////*/
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    background-color: #0e172c;
+    width: 100%;
+    .container-fluid{
+        background-color: #0e172c;
+        .navbar-collapse {
+            justify-content: center;
+            .navbar-nav   {
+                display: flex;
+                justify-content: center;
+                color: #fffffe; 
+                .nav-item {
+                    padding: 10px 20px 10px 20px;
+                    font-weight: 800;
+                    .nav-link{
+                        color: #fffffe;
+                        &:hover{
+                           color: #fec7d7;
+                     } 
+                     }
+                    &:hover{
+                        color: #fec7d7
+                    }
+              }
+            } 
+        }
+        .nav-link.active{
+            color: #fffffe;
+            &:hover{
+                color: #fec7d7
+            }
+        }
+        .nav-link.show{
+            color: #fffffe;
+        }
+    }
+}

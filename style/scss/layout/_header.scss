@@ -1,0 +1,47 @@
+/*////HEADER////*/
+
+.encabezado {
+    position: sticky;
+    top: 0;
+    background-color:#fec7d7 ;
+    z-index: 1000;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        padding: 10px 20px 10px 20px;
+        .logoparfum {
+            width: 220px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    h1 {
+        font-size: 40px;
+        color: #0e172c;
+        cursor: pointer;
+        &:hover{
+            color: #fffffe;
+        }
+    }
+    .redes {
+        padding: 0px 20px 0px 20px;
+        .bi {
+            font-size: 30px;
+            color: #0e172c;
+            &:hover{
+                color: #fffffe;
+                cursor: pointer;
+            }
+        }
+        a {
+            padding: 5px
+        }
+    }
+    
+}
+
+
+

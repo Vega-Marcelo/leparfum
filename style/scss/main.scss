@@ -1,0 +1,106 @@
+//Base
+@import "./base/reset";
+@import "./base/tipografia";
+//Layout
+@import "./layout/header";
+@import "./layout/navegation";
+@import "./layout/footer";
+//Pages
+@import "./pages/index";
+@import "./pages/fragancias";
+@import "./pages/maquillajes";
+@import "./pages/contacto";
+@import "./pages/sobre-nosotros";
+
+
+/*////MEDIAS QUERIES////*/
+
+@media (max-width: 905px){
+
+   .mapa{
+    width: 200px;
+    height: 200px;
+   }
+
+}
+
+@media (max-width: 705px){
+   .contacto a, p{
+    font-size: small;
+   }
+   .nosotros a{
+    font-size: small;
+   }
+}
+
+@media (max-width: 655px){
+.encabezado{
+    flex-direction: column;
+}
+}
+
+@media (max-width: 630px){
+    .contacto{
+        margin-left: 18px;
+        padding: 5px;
+    }
+    .maps{
+        margin: 0;
+        padding: 5px;
+    }
+
+    .mapa{
+        margin-left: 50px;
+    }
+
+    .descripcion{
+        display: none;
+    }
+    .grilla-perfumes-femeninos, .grilla-perfumes-masculinos, .grilla-maquillajes{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .marca-m{
+        font-size: 15px ;
+    }
+    .formulario h2{
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width: 465px){
+h2{
+    font-size: 16px;
+}
+.ofertas p, .regaleria p{
+    font-size: 13px;
+}
+.logo{
+    display: none;
+}
+.derechos p{
+    font-size: 8px;
+}
+.descuentos{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.video{
+    display: none;
+}
+
+.mapa{
+    margin-left: 30px;
+}
+
+.iconowts{
+    width: 40px ;
+}
+
+fieldset{
+    width: 250px;
+}
+
+}

@@ -1,0 +1,153 @@
+/*////SECCION BEAUTY////*/
+
+.beauty {
+    margin-top: 40px;
+    h2 {
+        text-align: center;
+    }
+    .beauty-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        margin-top: 50px;
+        margin-bottom: 35px;
+        .img-beauty {
+            width: 100%;
+            max-width: 300px;
+            max-height: 195px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-left: 75px;
+            background-color: #0e172c;
+            color: #fffffe;
+            width: 145px;
+            font-weight: 600;
+            border-radius: 5px;
+            text-align: center;
+            &:hover{
+                background-color: #d9d4e7;
+                color: #0e172c;
+            }
+        }
+    }
+}
+
+/*////SECCION OPORTUNIDADES Y OFERTAS////*/
+
+.ofertas {
+    background-color: #d9d4e7;
+    padding-top: 50px;
+    h2 {
+        text-align: center;
+    }
+    p {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .ofertas-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        text-align: center;
+        .articles-ofertas {
+            max-width: 500px;
+            padding: 25px;
+            font-size: larger;
+            .img-ofertas {
+                width: 100%;
+                max-width: 400px;
+                max-height: 400px;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                margin-bottom: 10px;
+            }     
+        }
+    }
+}
+
+/*////SECCION REGALERIA////*/
+.regaleria{
+    h2 {
+        text-align: center;
+        padding-top: 10px;
+    }    
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .regaleria-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 35px;
+        padding-bottom: 10px;
+        text-align: center;
+        .articles-regaleria {
+            max-width: 500px;
+            padding: 25px;
+            font-size: larger;
+            margin: 20px;
+        }
+        .img-regaleria {
+            width: 100%;
+            max-width: 400px;
+            max-height: 350px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/*////SECCION MEDIOS DE PAGO////*/
+
+.descuentos {
+    display: grid;
+    grid-template-areas: 
+    "h2 h2"
+    "carrusel video";
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #d9d4e7;
+    justify-items: center;
+    align-items: center;
+    h2 {
+        grid-area: h2;
+        text-align: center;
+        padding-top: 10px;
+    }  
+    .carousel-inner{
+        grid-area: carrusel;
+        padding: 25px;
+        .d-block{
+            width: 300px;
+            height: 350px;
+            object-fit:contain;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    }
+    .video{
+        grid-area: video;      
+        .v1{
+            width: 80%;
+            border-radius: 8px;
+            max-width: 700px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

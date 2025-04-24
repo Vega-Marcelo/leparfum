@@ -1,0 +1,27 @@
+/* ////PAGINA CONTACTO//// */
+
+.formulario{
+    margin: 20px;
+    h2 {
+        text-align: center;
+        font-size:30px;
+    }
+    .formulario-contacto{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin:20px;
+        fieldset{
+            width: 340px;
+        }
+        .btn{
+            background-color: #0e172c;
+            &:hover{
+                background-color: #fec7d7;
+                color:#0e172c
+            }      
+        }      
+    }
+}
+
+
