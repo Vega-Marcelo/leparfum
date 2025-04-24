@@ -11,17 +11,17 @@ footer {
         padding: 20px;
         .ntitulos {
             font-weight: 500;
-            color: #0e172c;
+            color:$secundary-color;
             &:hover{
-                color: #fffffe;
+                color: $hipervinculos;
             }
         }
         a {
             margin-top: 30px;
             font-weight: 500;
-            color: #0e172c;
+            color: $secundary-color;
             &:hover{
-              color: #fffffe;     
+              color: $hipervinculos;     
             }
         }
     }
@@ -31,19 +31,19 @@ footer {
         a {
             margin-top: 30px;
             font-weight: 500;
-            color: #0e172c;
+            color: $secundary-color;
             cursor: pointer;
             &:hover{
-                color: #fffffe; 
+                color: $hipervinculos; 
             }
         }
         .pc {
             margin-top: 12px;
             .bi {
                 font-size: 30px;
-                color: #0e172c;
+                color: $secundary-color;
                 &:hover{
-                    color: #fffffe;
+                    color: $hipervinculos;
                     cursor: pointer;
                 }
             }
@@ -66,14 +66,14 @@ footer {
         right: 20px;
     }
     .derechos {
-        background-color: #0e172c;
+        background-color: $secundary-color;
         border: 3px solid black;
         text-align: center;
         width: 100%;
         p {
             font-size: small;
             font-weight: 600;
-            color: #fffffe
+            color: $hipervinculos
         }
     }
 }

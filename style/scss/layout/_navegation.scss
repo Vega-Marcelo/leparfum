@@ -3,39 +3,39 @@
 .navbar {
     padding-top: 0px;
     padding-bottom: 0px; 
-    background-color: #0e172c;
+    background-color: $secundary-color;
     width: 100%;
     .container-fluid{
-        background-color: #0e172c;
+        background-color: $secundary-color;
         .navbar-collapse {
             justify-content: center;
             .navbar-nav   {
                 display: flex;
                 justify-content: center;
-                color: #fffffe; 
+                color: $hipervinculos; 
                 .nav-item {
                     padding: 10px 20px 10px 20px;
                     font-weight: 800;
                     .nav-link{
-                        color: #fffffe;
+                        color: $hipervinculos;
                         &:hover{
-                           color: #fec7d7;
+                           color: $primary-color;
                      } 
                      }
                     &:hover{
-                        color: #fec7d7
+                        color: $primary-color
                     }
               }
             } 
         }
         .nav-link.active{
-            color: #fffffe;
+            color: $hipervinculos;
             &:hover{
-                color: #fec7d7
+                color: $primary-color
             }
         }
         .nav-link.show{
-            color: #fffffe;
+            color: $hipervinculos;
         }
     }
 }

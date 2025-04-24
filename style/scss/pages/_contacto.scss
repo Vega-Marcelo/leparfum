@@ -15,10 +15,10 @@
             width: 340px;
         }
         .btn{
-            background-color: #0e172c;
+            background-color: $secundary-color;
             &:hover{
-                background-color: #fec7d7;
-                color:#0e172c
+                background-color: $primary-color;
+                color:$secundary-color;
             }      
         }      
     }

@@ -1,3 +1,5 @@
+//Abstract
+@import "./abstracts/variables";
 //Base
 @import "./base/reset";
 @import "./base/tipografia";
@@ -6,7 +8,7 @@
 @import "./layout/navegation";
 @import "./layout/footer";
 //Pages
-@import "./pages/index";
+@import "./pages/home";
 @import "./pages/fragancias";
 @import "./pages/maquillajes";
 @import "./pages/contacto";

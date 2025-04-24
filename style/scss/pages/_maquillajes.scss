@@ -2,16 +2,16 @@
 
 .main-maquillajes {
     margin-bottom: 10px;
-    background-color: #d9d4e7;
+    background-color: $third-color;
     h2{
         text-align: center;
         margin-top: 10px;
     }
     h3{
-        background-color: #0e172c;
+        background-color: $secundary-color;
         width: 100%;
         height: 50px;
-        color:#fffffe;
+        color: $hipervinculos;
         padding-top: 6px;
         text-align: center;
         margin-top: 10px;
@@ -39,7 +39,7 @@
                 margin-bottom: 15px;
             }
             .marca-m{
-                color:rgba(223, 129, 215, 0.22);
+                color: $marcas;
             }          
             .descripcion{ 
                 padding: 10px;

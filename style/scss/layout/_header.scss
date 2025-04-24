@@ -3,7 +3,7 @@
 .encabezado {
     position: sticky;
     top: 0;
-    background-color:#fec7d7 ;
+    background-color: $primary-color ;
     z-index: 1000;
     display: flex;
     flex-flow: row wrap;
@@ -20,19 +20,19 @@
     }
     h1 {
         font-size: 40px;
-        color: #0e172c;
+        color: $secundary-color;
         cursor: pointer;
         &:hover{
-            color: #fffffe;
+            color: $hipervinculos;
         }
     }
     .redes {
         padding: 0px 20px 0px 20px;
         .bi {
             font-size: 30px;
-            color: #0e172c;
+            color: $secundary-color;
             &:hover{
-                color: #fffffe;
+                color: $hipervinculos;
                 cursor: pointer;
             }
         }

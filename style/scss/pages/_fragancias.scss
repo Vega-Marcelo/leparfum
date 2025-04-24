@@ -1,28 +1,28 @@
 /*///////// PAGE FRAGANCIAS CON GRID///////*/
 
 .main-fragancias {
-    background-color: #d9d4e7;
+    background-color:$third-color;
     margin-bottom: 10px;
     h2 {
         text-align: center;
         margin-top: 20px;
     }
     .grilla-perfumes-femeninos {
-        background-color: #d9d4e7;
+        background-color: $third-color;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         margin: 40px;
     }
     .frag-masc{
-        background-color: #0e172c;
+        background-color: $secundary-color;
         width: 100%;
         height: 50px;
-        color:#fffffe;
+        color: $hipervinculos;
         padding-top: 6px;
     }
     .grilla-perfumes-masculinos {
-        background-color: #d9d4e7;
+        background-color: $third-color;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
