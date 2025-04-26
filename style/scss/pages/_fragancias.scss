@@ -5,7 +5,14 @@
     margin-bottom: 10px;
     h2 {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 35px;
+        transition: color 0.8s;
+        &:hover{
+            cursor: pointer;
+            color: $hipervinculos;
+            text-shadow: $sombra; 
+            transform: scale(1.05, 1.05);
+        }
     }
     .grilla-perfumes-femeninos {
         background-color: $third-color;
@@ -20,6 +27,12 @@
         height: 50px;
         color: $hipervinculos;
         padding-top: 6px;
+        transition: color 0.8s;
+        &:hover{
+            cursor: pointer;
+            color: $primary-color;
+            transform: scale(1.05, 1.05);
+        }
     }
     .grilla-perfumes-masculinos {
         background-color: $third-color;
@@ -36,7 +49,7 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: $sombra;
     .img-perfumes {
         width: 100%;
         max-width: 400px;
@@ -44,6 +57,13 @@
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px4;
         margin-bottom: 15px;
+        &:hover{
+            cursor: pointer; 
+            transform: scale(1.1,1.1);
+            box-shadow: none;
+            border: solid 1px #0e172c;
+            margin-top: 20px;
+        }
     }
     .descripcion{
         padding: 10px;
@@ -52,6 +72,17 @@
         font-size: 30px;
         font-weight: 600;
         font-style: italic;
+        transition: color 0.5s;
+        span{
+            text-decoration:line-through;
+            font-size: 20px;
+            color: #0e172c57;
+        }
+        &:hover{
+            cursor: pointer;
+            color: $hipervinculos;
+            transform: scale(1.1,1.1);
+        }
     }
 }
 

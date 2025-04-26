@@ -4,18 +4,35 @@
     margin-bottom: 10px;
     background-color: $third-color;
     h2{
-        text-align: center;
-        margin-top: 10px;
-    }
-    h3{
-        background-color: $secundary-color;
         width: 100%;
         height: 50px;
+        background-color: $secundary-color;
+        text-align: center;
         color: $hipervinculos;
+        text-box-trim: trim-both;
+        transition: color 0.8s;
+        &:hover{
+            cursor: pointer;
+            color: $primary-color;
+        }
+    }
+    h3{
+        color: $secundary-color;
         padding-top: 6px;
         text-align: center;
         margin-top: 10px;
+        animation: aumentar 2s infinite ease-in-out;
     }
+    
+    @keyframes aumentar {
+        0%, 100% {
+          transform: scale(0.8); 
+        }
+        50% {
+          transform: scale(1); 
+        }
+      }
+
     .grilla-maquillajes{
         display: grid;
         grid-area: grilla-maquillajes;
@@ -29,7 +46,7 @@
             justify-content: space-between;
             text-align: justify;
             border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;      
+            box-shadow: $sombra;    
             .img-maq {
                 width: 60%;
                 max-width: 300px;
@@ -37,7 +54,14 @@
                 border-radius: 5px;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px4;
                 margin-bottom: 15px;
-            }
+                &:hover{
+                    cursor: pointer; 
+                    transform: scale(1.1,1.1);
+                    box-shadow: none;
+                    border: solid 1px #0e172c;
+                    margin-top: 20px;
+                }
+              } 
             .marca-m{
                 color: $marcas;
             }          
@@ -48,7 +72,18 @@
                 font-size: 30px;
                 font-weight: 600;
                 font-style: italic;
-            }
+                transition: color 0.5s;
+                span{
+                    text-decoration:line-through;
+                    font-size: 20px;
+                    color: #0e172c57;
+                }
+                &:hover{
+                    cursor: pointer;
+                    color: $hipervinculos;
+                    transform: scale(1.1,1.1);
+                }
+            }   
         }     
      }
 }

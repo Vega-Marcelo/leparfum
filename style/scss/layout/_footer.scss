@@ -57,14 +57,20 @@ footer {
             max-width: 400px;
             max-height: 250px;
             border-radius: 8px;
+            box-shadow: $sombra;
         }        
     }
     .iconowts{
         position: fixed;
-        width: 56px;
         bottom: 25px;
         right: 20px;
-    }
+        animation: sombraWhatsapp 1.5s infinite alternate;
+        border-radius: 50px;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2,1.2);
+        }
+      }
     .derechos {
         background-color: $secundary-color;
         border: 3px solid black;
@@ -73,8 +79,20 @@ footer {
         p {
             font-size: small;
             font-weight: 600;
-            color: $hipervinculos
+            color: $hipervinculos;
+            margin-top: 15px;
         }
     }
 }
 
+@keyframes sombraWhatsapp {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); 
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.60); 
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); 
+    }
+  }

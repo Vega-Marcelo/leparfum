@@ -11,19 +11,25 @@
     justify-content: space-between;
     .logo {
         padding: 10px 20px 10px 20px;
+        animation: alogo infinite ease 5s;
         .logoparfum {
             width: 220px;
+            margin-left: 20px; 
         }
         &:hover{
             cursor: pointer;
+            transform: rotateY(20deg);
         }
     }
     h1 {
         font-size: 40px;
         color: $secundary-color;
-        cursor: pointer;
+        transition: color 0.8s;
         &:hover{
+            cursor: pointer;
             color: $hipervinculos;
+            text-shadow: $sombra; 
+            transform: scale(1.05, 1.05);
         }
     }
     .redes {
@@ -31,9 +37,12 @@
         .bi {
             font-size: 30px;
             color: $secundary-color;
+            transition: color 0.5s;
             &:hover{
                 color: $hipervinculos;
                 cursor: pointer;
+                text-shadow: $sombra; 
+                transform: scale(1.05, 1.05);
             }
         }
         a {
@@ -44,4 +53,14 @@
 }
 
 
-
+@keyframes alogo{ 
+    0% {
+      transform: rotateY(40deg) translateX(0);
+    }
+    50% {
+      transform: rotateY(-15deg) translateX(20px);
+    }
+    100% {
+      transform: rotateY(40deg) translateX(0);
+    }
+}

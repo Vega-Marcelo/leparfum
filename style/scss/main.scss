@@ -3,6 +3,8 @@
 //Base
 @import "./base/reset";
 @import "./base/tipografia";
+//Componentes
+@import "./components/boton-beauty";
 //Layout
 @import "./layout/header";
 @import "./layout/navegation";
@@ -69,6 +71,10 @@
     .formulario h2{
         font-size: 20px;
 
+    }
+    .w-100 {
+        width: 495px;
+        height: 260px;
     }
 }
 
