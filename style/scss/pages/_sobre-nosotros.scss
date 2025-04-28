@@ -1,0 +1,35 @@
+.sobre-nosotros {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background-color: $primary-color;
+    border-radius: 12px;
+    box-shadow: $sombra;
+    h2 {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 20px;
+        color: $secundary-color;
+        transition: color 0.8s;
+        &:hover{
+            cursor: pointer;
+            color: $hipervinculos;
+            text-shadow: $sombra; 
+            transform: scale(1.05, 1.05);
+        }
+      }
+      p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 15px;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        li {
+            margin-bottom: 10px;
+            font-size: 15px;
+          }
+      }
+  }

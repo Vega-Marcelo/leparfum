@@ -1,0 +1,32 @@
+@mixin images($width,$max-width,$max-height){
+    width: $width;
+    max-width: $max-width;
+    max-height: $max-height;
+    border-radius: 5px;
+    box-shadow: $sombra;
+    margin-bottom: 15px;
+    &:hover{
+        cursor: pointer; 
+        transform: scale(1.1,1.1);
+        box-shadow: none;
+        border: solid 1px #0e172c;
+        margin-top: 20px;
+    }
+}
+
+.img-perfumes{
+    @include images(100%,400px,400px);
+}
+
+.img-maq{
+    @include images(60%,300px,300px);
+}
+
+.img-regaleria{
+    @include images (100%,400px,300px);
+    margin-bottom:20px;
+    &:hover{
+        cursor: pointer;
+        filter: brightness(50%);
+    }
+}

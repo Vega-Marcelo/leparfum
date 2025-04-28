@@ -18,6 +18,7 @@
                     font-weight: 800;
                     .nav-link{
                         color: $hipervinculos;
+                        line-height: 1px;
                         transition: color 1s;
                         &:hover{
                            color: $primary-color;

@@ -39,6 +39,76 @@ span {
   color: #0e172c;
 }
 
+.img-perfumes {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 15px;
+}
+.img-perfumes:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  box-shadow: none;
+  border: solid 1px #0e172c;
+  margin-top: 20px;
+}
+
+.img-maq {
+  width: 60%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 15px;
+}
+.img-maq:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  box-shadow: none;
+  border: solid 1px #0e172c;
+  margin-top: 20px;
+}
+
+.img-regaleria {
+  width: 100%;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+.img-regaleria:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  box-shadow: none;
+  border: solid 1px #0e172c;
+  margin-top: 20px;
+}
+.img-regaleria:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.precio-perf, .precio-maq {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  transition: color 0.5s;
+}
+.precio-perf span, .precio-maq span {
+  text-decoration: line-through;
+  font-size: 20px;
+  color: rgba(14, 23, 44, 0.3411764706);
+}
+.precio-perf:hover, .precio-maq:hover {
+  cursor: pointer;
+  color: #fffffe;
+  transform: scale(1.1, 1.1);
+}
+
 /*////HEADER////*/
 .encabezado {
   position: sticky;
@@ -126,6 +196,7 @@ span {
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #fffffe;
+  line-height: 1px;
   transition: color 1s;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
@@ -199,10 +270,9 @@ footer .maps {
   padding: 20px;
 }
 footer .maps .mapa {
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 250px;
+  max-width: 100%;
+  width: 450px;
+  height: 300px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -224,7 +294,7 @@ footer .derechos {
   width: 100%;
 }
 footer .derechos p {
-  font-size: small;
+  font-size: 10px;
   font-weight: 600;
   color: #fffffe;
   margin-top: 15px;
@@ -239,6 +309,11 @@ footer .derechos p {
   }
   100% {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  }
+}
+@media (max-width: 465px) {
+  .derechos p {
+    font-size: 8px;
   }
 }
 /*////SECCION BEAUTY////*/
@@ -280,31 +355,6 @@ footer .derechos p {
   text-align: center;
   margin-top: -35px;
 }
-.ofertas p {
-  font-weight: 600;
-  font-size: 20px;
-}
-.ofertas .ofertas-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 35px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-.ofertas .ofertas-flex .articles-ofertas {
-  max-width: 500px;
-  padding: 25px;
-  font-size: larger;
-}
-.ofertas .ofertas-flex .articles-ofertas .img-ofertas {
-  width: 100%;
-  max-width: 400px;
-  max-height: 400px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  margin-bottom: 10px;
-}
 
 /*////SECCION REGALERIA////*/
 .regaleria h2 {
@@ -327,23 +377,11 @@ footer .derechos p {
   align-items: flex-start;
   align-content: space-around;
 }
-.regaleria .regaleria-flex .articles-regaleria {
+.regaleria .regaleria-flex .article-regaleria {
   max-width: 500px;
   padding: 25px;
   font-size: larger;
   margin: 20px;
-}
-.regaleria .regaleria-flex .img-regaleria {
-  width: 100%;
-  max-width: 400px;
-  max-height: 300px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  margin-bottom: 20px;
-}
-.regaleria .regaleria-flex .img-regaleria:hover {
-  cursor: pointer;
-  filter: brightness(50%);
 }
 .regaleria .regaleria-flex #accordionFlushExample .accordion-item {
   max-width: 400px;
@@ -441,39 +479,8 @@ footer .derechos p {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.perfumes .img-perfumes {
-  width: 100%;
-  max-width: 400px;
-  max-height: 400PX;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px4;
-  margin-bottom: 15px;
-}
-.perfumes .img-perfumes:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
-  box-shadow: none;
-  border: solid 1px #0e172c;
-  margin-top: 20px;
-}
 .perfumes .descripcion {
   padding: 10px;
-}
-.perfumes .precio-perf {
-  font-size: 30px;
-  font-weight: 600;
-  font-style: italic;
-  transition: color 0.5s;
-}
-.perfumes .precio-perf span {
-  text-decoration: line-through;
-  font-size: 20px;
-  color: rgba(14, 23, 44, 0.3411764706);
-}
-.perfumes .precio-perf:hover {
-  cursor: pointer;
-  color: #fffffe;
-  transform: scale(1.1, 1.1);
 }
 
 /*////PAGE MAQUILLAJE CON GRID////*/
@@ -521,24 +528,8 @@ footer .derechos p {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
-  text-align: justify;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.main-maquillajes .grilla-maquillajes .maquillajes .img-maq {
-  width: 60%;
-  max-width: 300px;
-  max-height: 300PX;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px4;
-  margin-bottom: 15px;
-}
-.main-maquillajes .grilla-maquillajes .maquillajes .img-maq:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
-  box-shadow: none;
-  border: solid 1px #0e172c;
-  margin-top: 20px;
 }
 .main-maquillajes .grilla-maquillajes .maquillajes .marca-m {
   color: rgba(223, 129, 215, 0.22);
@@ -546,26 +537,13 @@ footer .derechos p {
 .main-maquillajes .grilla-maquillajes .maquillajes .descripcion {
   padding: 10px;
 }
-.main-maquillajes .grilla-maquillajes .maquillajes .precio-maq {
-  font-size: 30px;
-  font-weight: 600;
-  font-style: italic;
-  transition: color 0.5s;
-}
-.main-maquillajes .grilla-maquillajes .maquillajes .precio-maq span {
-  text-decoration: line-through;
-  font-size: 20px;
-  color: rgba(14, 23, 44, 0.3411764706);
-}
-.main-maquillajes .grilla-maquillajes .maquillajes .precio-maq:hover {
-  cursor: pointer;
-  color: #fffffe;
-  transform: scale(1.1, 1.1);
-}
 
 /* ////PAGINA CONTACTO//// */
 .formulario {
   margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 20px;
+  padding: 10px;
 }
 .formulario h2 {
   text-align: center;
@@ -576,9 +554,13 @@ footer .derechos p {
   flex-flow: column nowrap;
   align-items: center;
   margin: 20px;
+  padding: 20px;
 }
 .formulario .formulario-contacto fieldset {
   width: 340px;
+}
+.formulario .formulario-contacto textarea {
+  height: 250px;
 }
 .formulario .formulario-contacto .btn {
   background-color: #0e172c;
@@ -588,24 +570,74 @@ footer .derechos p {
   color: #0e172c;
 }
 
+.sobre-nosotros {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background-color: #fec7d7;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.sobre-nosotros h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #0e172c;
+  transition: color 0.8s;
+}
+.sobre-nosotros h2:hover {
+  cursor: pointer;
+  color: #fffffe;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: scale(1.05, 1.05);
+}
+.sobre-nosotros p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.sobre-nosotros ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.sobre-nosotros ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
 /*////MEDIAS QUERIES////*/
 @media (max-width: 905px) {
-  .mapa {
-    width: 200px;
-    height: 200px;
+  .precio-maq, .precio-perf {
+    font-size: 20px;
+  }
+  .perfumes p span, .maquillajes p span {
+    font-size: 15px;
   }
 }
 @media (max-width: 705px) {
   .contacto a, p {
-    font-size: small;
+    font-size: 15px;
   }
   .nosotros a {
-    font-size: small;
+    font-size: 15px;
+  }
+  .perfumes {
+    justify-content: flex-start;
+  }
+  .precio-maq, .precio-perf {
+    font-size: 18px;
+  }
+  .perfumes p span, .maquillajes p span {
+    font-size: 13px;
   }
 }
 @media (max-width: 655px) {
   .encabezado {
     flex-direction: column;
+  }
+  .logo {
+    display: none;
   }
 }
 @media (max-width: 630px) {
@@ -617,18 +649,26 @@ footer .derechos p {
     margin: 0;
     padding: 5px;
   }
-  .mapa {
-    margin-left: 50px;
+  .main-maquillajes .grilla-maquillajes .maquillajes {
+    justify-content: flex-start;
   }
-  .descripcion {
-    display: none;
+  .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .grilla-perfumes-femeninos, .grilla-perfumes-masculinos, .grilla-maquillajes {
-    display: flex;
-    flex-direction: column;
+  .main-maquillajes .grilla-maquillajes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .perfumes .descripcion, .maquillajes .descripcion {
+    font-size: 13px;
+  }
+  .precio-maq, .precio-perf {
+    font-size: 16px;
+  }
+  .perfumes p span, .maquillajes p span {
+    font-size: 12px;
   }
   .marca-m {
-    font-size: 15px;
+    font-size: 8px;
   }
   .formulario h2 {
     font-size: 20px;
@@ -636,6 +676,14 @@ footer .derechos p {
   .w-100 {
     width: 495px;
     height: 260px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .maps {
+    margin-right: 30px;
   }
 }
 @media (max-width: 465px) {
@@ -645,12 +693,6 @@ footer .derechos p {
   .ofertas p, .regaleria p {
     font-size: 13px;
   }
-  .logo {
-    display: none;
-  }
-  .derechos p {
-    font-size: 8px;
-  }
   .descuentos {
     display: flex;
     flex-flow: column nowrap;
@@ -658,7 +700,7 @@ footer .derechos p {
   .video {
     display: none;
   }
-  .mapa {
+  .maps {
     margin-left: 30px;
   }
   .iconowts {
@@ -666,6 +708,42 @@ footer .derechos p {
   }
   fieldset {
     width: 250px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+  .precio-maq, .precio-perf {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .perfumes p span, .maquillajes p span {
+    font-size: 8px;
+  }
+  .sobre-nosotros h2 {
+    font-size: 25px;
+  }
+  .sobre-nosotros p {
+    font-size: 13px;
+  }
+  .sobre-nosotros ul li {
+    font-size: 13px;
+  }
+}
+@media (max-width: 415px) {
+  .formulario h2, label {
+    font-size: 15px;
+  }
+  .form-control {
+    width: 250px;
+    height: 50px;
+  }
+  fieldset {
+    padding-left: 50px;
+  }
+  .btn {
+    width: 80px;
+    height: 35px;
+    font-size: 10px;
   }
 }
 

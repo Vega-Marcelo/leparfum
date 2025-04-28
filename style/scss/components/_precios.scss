@@ -1,0 +1,24 @@
+%precios{
+        font-size: 30px;
+        font-weight: 600;
+        font-style: italic;
+        transition: color 0.5s;
+        span{
+            text-decoration:line-through;
+            font-size: 20px;
+            color: #0e172c57;
+        }
+        &:hover{
+            cursor: pointer;
+            color: $hipervinculos;
+            transform: scale(1.1,1.1);
+        }
+}
+
+.precio-maq{
+    @extend %precios;
+}
+
+.precio-perf{
+    @extend %precios;
+}
