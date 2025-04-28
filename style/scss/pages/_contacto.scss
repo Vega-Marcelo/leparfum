@@ -31,4 +31,33 @@
     }
 }
 
+@media (max-width: 630px){
+    .formulario h2{
+        font-size: 20px;
 
+    }
+}
+
+@media (max-width: 465px){
+    fieldset{
+        width: 250px;
+    }
+}
+
+@media (max-width: 415px){
+    .formulario h2, label{
+        font-size: 15px;
+    }
+    .form-control{
+        width: 250px;
+        height: 50px;
+    }
+    fieldset{
+       padding-left: 50px;
+    }
+    .btn{
+        width: 80px;
+        height: 35px;
+        font-size: 10px;
+    }
+}

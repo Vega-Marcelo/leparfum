@@ -33,3 +33,15 @@
           }
       }
   }
+
+@media (max-width: 465px){ 
+  .sobre-nosotros h2{
+    font-size: 25px;
+  }
+  .sobre-nosotros p{
+    font-size: 13px;
+  }
+  .sobre-nosotros ul li{
+    font-size: 13px;
+  }
+}

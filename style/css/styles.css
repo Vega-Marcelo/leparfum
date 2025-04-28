@@ -172,6 +172,14 @@ span {
     transform: rotateY(40deg) translateX(0);
   }
 }
+@media (max-width: 655px) {
+  .encabezado {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+}
 /*////MENU DE NAVEGACION////*/
 .navbar {
   padding-top: 0px;
@@ -216,6 +224,16 @@ span {
   color: #fffffe;
 }
 
+@media (max-width: 630px) {
+  .nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 465px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
 /*////FOOTER////*/
 footer {
   display: flex;
@@ -311,9 +329,38 @@ footer .derechos p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   }
 }
+@media (max-width: 705px) {
+  .contacto a, p {
+    font-size: 15px;
+  }
+  .nosotros a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 630px) {
+  .contacto {
+    margin-left: 18px;
+    padding: 5px;
+  }
+  .maps {
+    margin: 0;
+    padding: 5px;
+  }
+}
+@media (max-width: 550px) {
+  .maps {
+    margin-right: 30px;
+  }
+}
 @media (max-width: 465px) {
   .derechos p {
     font-size: 8px;
+  }
+  .maps {
+    margin-left: 30px;
+  }
+  .iconowts {
+    width: 40px;
   }
 }
 /*////SECCION BEAUTY////*/
@@ -427,6 +474,27 @@ footer .derechos p {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+@media (max-width: 630px) {
+  .w-100 {
+    width: 495px;
+    height: 260px;
+  }
+}
+@media (max-width: 465px) {
+  h2 {
+    font-size: 16px;
+  }
+  .ofertas p, .regaleria p {
+    font-size: 13px;
+  }
+  .descuentos {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .video {
+    display: none;
+  }
+}
 /*///////// PAGE FRAGANCIAS CON GRID///////*/
 .main-fragancias {
   background-color: #d9d4e7;
@@ -483,6 +551,51 @@ footer .derechos p {
   padding: 10px;
 }
 
+@media (max-width: 905px) {
+  .precio-perf {
+    font-size: 20px;
+  }
+  .perfumes p span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 705px) {
+  .perfumes {
+    justify-content: flex-start;
+  }
+  .precio-perf {
+    font-size: 18px;
+  }
+  .perfumes p span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 630px) {
+  .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .perfumes .descripcion {
+    font-size: 13px;
+  }
+  .precio-perf {
+    font-size: 16px;
+  }
+  .perfumes p span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 465px) {
+  .precio-perf {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .perfumes p span {
+    font-size: 8px;
+  }
+  .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /*////PAGE MAQUILLAJE CON GRID////*/
 .main-maquillajes {
   margin-bottom: 10px;
@@ -538,6 +651,54 @@ footer .derechos p {
   padding: 10px;
 }
 
+@media (max-width: 905px) {
+  .precio-maq {
+    font-size: 20px;
+  }
+  .maquillajes p span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 705px) {
+  .precio-maq {
+    font-size: 18px;
+  }
+  .maquillajes p span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 630px) {
+  .main-maquillajes .grilla-maquillajes .maquillajes {
+    justify-content: flex-start;
+  }
+  .main-maquillajes .grilla-maquillajes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .maquillajes .descripcion {
+    font-size: 13px;
+  }
+  .precio-maq {
+    font-size: 16px;
+  }
+  .maquillajes p span {
+    font-size: 12px;
+  }
+  .marca-m {
+    font-size: 8px;
+  }
+}
+@media (max-width: 465px) {
+  .precio-maq {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .maquillajes p span {
+    font-size: 8px;
+  }
+  .main-maquillajes .grilla-maquillajes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* ////PAGINA CONTACTO//// */
 .formulario {
   margin: 20px;
@@ -570,6 +731,33 @@ footer .derechos p {
   color: #0e172c;
 }
 
+@media (max-width: 630px) {
+  .formulario h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 465px) {
+  fieldset {
+    width: 250px;
+  }
+}
+@media (max-width: 415px) {
+  .formulario h2, label {
+    font-size: 15px;
+  }
+  .form-control {
+    width: 250px;
+    height: 50px;
+  }
+  fieldset {
+    padding-left: 50px;
+  }
+  .btn {
+    width: 80px;
+    height: 35px;
+    font-size: 10px;
+  }
+}
 .sobre-nosotros {
   max-width: 800px;
   margin: 50px auto;
@@ -606,119 +794,7 @@ footer .derechos p {
   font-size: 15px;
 }
 
-/*////MEDIAS QUERIES////*/
-@media (max-width: 905px) {
-  .precio-maq, .precio-perf {
-    font-size: 20px;
-  }
-  .perfumes p span, .maquillajes p span {
-    font-size: 15px;
-  }
-}
-@media (max-width: 705px) {
-  .contacto a, p {
-    font-size: 15px;
-  }
-  .nosotros a {
-    font-size: 15px;
-  }
-  .perfumes {
-    justify-content: flex-start;
-  }
-  .precio-maq, .precio-perf {
-    font-size: 18px;
-  }
-  .perfumes p span, .maquillajes p span {
-    font-size: 13px;
-  }
-}
-@media (max-width: 655px) {
-  .encabezado {
-    flex-direction: column;
-  }
-  .logo {
-    display: none;
-  }
-}
-@media (max-width: 630px) {
-  .contacto {
-    margin-left: 18px;
-    padding: 5px;
-  }
-  .maps {
-    margin: 0;
-    padding: 5px;
-  }
-  .main-maquillajes .grilla-maquillajes .maquillajes {
-    justify-content: flex-start;
-  }
-  .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .main-maquillajes .grilla-maquillajes {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .perfumes .descripcion, .maquillajes .descripcion {
-    font-size: 13px;
-  }
-  .precio-maq, .precio-perf {
-    font-size: 16px;
-  }
-  .perfumes p span, .maquillajes p span {
-    font-size: 12px;
-  }
-  .marca-m {
-    font-size: 8px;
-  }
-  .formulario h2 {
-    font-size: 20px;
-  }
-  .w-100 {
-    width: 495px;
-    height: 260px;
-  }
-  .nav-link {
-    font-size: 15px;
-  }
-}
-@media (max-width: 550px) {
-  .maps {
-    margin-right: 30px;
-  }
-}
 @media (max-width: 465px) {
-  h2 {
-    font-size: 16px;
-  }
-  .ofertas p, .regaleria p {
-    font-size: 13px;
-  }
-  .descuentos {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .video {
-    display: none;
-  }
-  .maps {
-    margin-left: 30px;
-  }
-  .iconowts {
-    width: 40px;
-  }
-  fieldset {
-    width: 250px;
-  }
-  .nav-link {
-    font-size: 12px;
-  }
-  .precio-maq, .precio-perf {
-    font-size: 10px;
-    margin-left: 5px;
-  }
-  .perfumes p span, .maquillajes p span {
-    font-size: 8px;
-  }
   .sobre-nosotros h2 {
     font-size: 25px;
   }
@@ -727,23 +803,6 @@ footer .derechos p {
   }
   .sobre-nosotros ul li {
     font-size: 13px;
-  }
-}
-@media (max-width: 415px) {
-  .formulario h2, label {
-    font-size: 15px;
-  }
-  .form-control {
-    width: 250px;
-    height: 50px;
-  }
-  fieldset {
-    padding-left: 50px;
-  }
-  .btn {
-    width: 80px;
-    height: 35px;
-    font-size: 10px;
   }
 }
 

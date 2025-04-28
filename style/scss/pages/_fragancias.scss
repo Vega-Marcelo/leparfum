@@ -56,3 +56,54 @@
     }
 }
 
+@media(max-width: 905px){
+    .precio-perf{
+        font-size: 20px;
+    }
+    .perfumes p span{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 705px){
+    .perfumes{
+        justify-content: flex-start;
+    }
+    .precio-perf{
+        font-size: 18px;
+    }
+    .perfumes p span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 630px){
+    .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perfumes .descripcion{
+        font-size: 13px;
+    }
+
+    .precio-perf{
+       font-size: 16px;
+    }
+
+    .perfumes p span{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 465px){
+    .precio-perf{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .perfumes p span{
+        font-size: 8px;
+    }
+    .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

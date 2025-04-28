@@ -64,3 +64,12 @@
       transform: rotateY(40deg) translateX(0);
     }
 }
+
+@media (max-width: 655px){
+    .encabezado{
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+}

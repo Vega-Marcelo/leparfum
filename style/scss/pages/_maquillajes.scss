@@ -56,16 +56,55 @@
      }
 }
 
+@media(max-width: 905px){
+    .precio-maq{
+        font-size: 20px;
+    }
+    .maquillajes p span{
+        font-size: 15px;
+    }
+}
 
+@media (max-width: 705px){
+    .precio-maq{
+        font-size: 18px;
+    }
+    .maquillajes p span{
+        font-size: 13px;
+    }
+}
 
+@media (max-width: 630px){
+    .main-maquillajes .grilla-maquillajes .maquillajes{
+        justify-content:flex-start;
+    }
+    .main-maquillajes .grilla-maquillajes{
+        grid-template-columns: repeat(2, 1fr);
 
+    }
+    .maquillajes .descripcion{
+        font-size: 13px;
+    }
+    .precio-maq{
+        font-size: 16px;
+    }
+     .maquillajes p span{
+        font-size: 12px;
+    }
+    .marca-m{
+        font-size: 8px ;
+    }
+}
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 465px){
+    .precio-maq{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .maquillajes p span{
+        font-size: 8px;
+    }
+    .main-maquillajes .grilla-maquillajes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

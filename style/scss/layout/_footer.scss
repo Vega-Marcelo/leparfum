@@ -96,8 +96,41 @@ footer {
     }
   }
 
-@media (max-width: 465px){
-  .derechos p{
-    font-size: 8px;
+
+@media (max-width: 705px){
+    .contacto a, p{
+     font-size: 15px;
+    }
+    .nosotros a{
+     font-size: 15px;
+    }
+ }
+
+ @media (max-width: 630px){
+    .contacto{
+        margin-left: 18px;
+        padding: 5px;
+    }
+    .maps{
+        margin: 0;
+        padding: 5px;
+    }
+ }
+
+ @media (max-width: 550px){
+    .maps{
+        margin-right: 30px;
+    }
 }
+        
+@media (max-width: 465px){
+    .derechos p{
+        font-size: 8px;
+    }
+    .maps{
+        margin-left: 30px;    
+    }
+    .iconowts{
+        width: 40px ;
+    }
 }
