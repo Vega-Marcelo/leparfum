@@ -91,18 +91,11 @@
     }
 
     .perfumes p span{
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
 @media (max-width: 465px){
-    .precio-perf{
-        font-size: 10px;
-        margin-left: 5px;
-    }
-    .perfumes p span{
-        font-size: 8px;
-    }
     .main-fragancias .grilla-perfumes-femeninos, .main-fragancias .grilla-perfumes-masculinos {
         grid-template-columns: repeat(1, 1fr);
     }

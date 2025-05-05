@@ -14,7 +14,7 @@
                 justify-content: center;
                 color: $hipervinculos; 
                 .nav-item {
-                    padding: 10px 20px 10px 20px;
+                    padding: 10px 10px 10px 20px;
                     font-weight: 800;
                     .nav-link{
                         color: $hipervinculos;
@@ -43,6 +43,11 @@
     }
 }
 
+@media (max-width: 990px){
+    .container-fluid{
+        padding-left: 20px;
+    }
+}
 
 @media (max-width: 630px){
     .nav-link{

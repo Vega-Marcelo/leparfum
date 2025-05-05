@@ -89,7 +89,7 @@
         font-size: 16px;
     }
      .maquillajes p span{
-        font-size: 12px;
+        font-size: 13px;
     }
     .marca-m{
         font-size: 8px ;
@@ -97,13 +97,6 @@
 }
 
 @media (max-width: 465px){
-    .precio-maq{
-        font-size: 10px;
-        margin-left: 5px;
-    }
-    .maquillajes p span{
-        font-size: 8px;
-    }
     .main-maquillajes .grilla-maquillajes{
         grid-template-columns: repeat(1, 1fr);
     }
