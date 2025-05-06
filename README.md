@@ -1,13 +1,4 @@
-🌸 Le Parfum <br><br>
-  Una página web elegante desarrollada para la perfumería Le Parfum, diseñada para ofrecer una experiencia atractiva, moderna y adaptativa.
-
-🛠️ Tecnologías utilizadas <br><br>
-🧱 HTML5 — Estructura semántica de las páginas. HTML5
-
-🎨 CSS3 — Estilización y diseño responsive. CSS3
-
-🛍️ SASS — Preprocesador CSS para un código más organizado y mantenible. SASS <br>
-
-📄 Descripción <br>
-  Este proyecto simula el sitio web de una perfumería, presentando productos destacados, secciones de información y contacto.
-Se priorizó un diseño limpio, sofisticado y adaptativo para diferentes dispositivos.
+# 🌸 Le Parfum <br><br> Una página web elegante desarrollada para la perfumería **Le Parfum**, diseñada para ofrecer una experiencia atractiva, moderna y adaptativa. <br><br>
+## 🛠️ Tecnologías utilizadas <br><br> 🧱 **HTML5** — Estructura semántica de las páginas. [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) <br> 🎨 **CSS3** — Estilización y diseño responsive. [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) <br> 🛍️ **SASS** — Preprocesador CSS para un código más organizado y mantenible. [![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/) <br><br>
+📄 Descripción <br><br>
+Este proyecto simula el sitio web de una perfumería, presentando productos destacados, secciones de información y contacto. Se priorizó un diseño limpio, sofisticado y adaptativo para diferentes dispositivos.
