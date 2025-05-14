@@ -7,6 +7,9 @@
     width: 100%;
     .container-fluid{
         background-color: $secundary-color;
+        .navbar-toggler{
+            color:  rgba(8, 8, 37, 0);
+        }
         .navbar-collapse {
             justify-content: center;
             .navbar-nav   {

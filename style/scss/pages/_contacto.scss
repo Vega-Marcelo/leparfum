@@ -61,3 +61,10 @@
         font-size: 10px;
     }
 }
+
+@media (max-width: 340px) {
+    .form-control {
+        width: 240px;
+        height: 40px;
+    }
+}

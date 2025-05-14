@@ -9,6 +9,7 @@
         background-color: $secundary-color;
         text-align: center;
         color: $hipervinculos;
+        padding-top: 5px;
         text-box-trim: trim-both;
         transition: color 0.8s;
         &:hover{
@@ -56,6 +57,13 @@
      }
 }
 
+@media(max-width: 1000px){
+    .precio-maq{
+        margin-left: 2px;
+        font-size: 20px;
+    }
+}
+
 @media(max-width: 905px){
     .precio-maq{
         font-size: 20px;
@@ -65,9 +73,10 @@
     }
 }
 
-@media (max-width: 705px){
+@media (max-width: 760px){
     .precio-maq{
         font-size: 18px;
+        margin-left: 30px;
     }
     .maquillajes p span{
         font-size: 13px;
@@ -99,5 +108,17 @@
 @media (max-width: 465px){
     .main-maquillajes .grilla-maquillajes{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .main-maquillajes h2{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 370px){
+    .main-maquillajes h2{
+        font-size: 20xp;
+    }
+    .main-fragancias .frag-masc{
+        padding-top: 13px;
     }
 }
